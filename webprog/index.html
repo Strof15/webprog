@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asdf.css">
+    <script src="script.js"></script>
+    <title>feladat</title>
+</head>
+<body>
+    <div class="form1">
+        <form>
+           <h2>Megrendelés</h2> 
+           <div class="order">
+                <label>Megrendelő neve:</label>
+                <input onfocus="orderFocus(this)" onblur="orderBlur(this)" type="text" id="megrendeloneve"><br>
+                <label>Megrendelő címe:</label>
+                <input onfocus="orderFocus(this)" onblur="orderBlur(this)" type="text" id="cim"><br>
+                <label>Megrendelő telefonszáma:</label>
+                <input onfocus="orderFocus(this)" onblur="orderBlur(this)" type="tel" id="telefonsz" value="+36"><br>
+                <input onclick="order()" type="button" value="Elküld">
+           </div>
+        </form>
+    </div>
+    <div class="form2">
+        <div class="orderBack">
+            <h2>Visszaigazolás</h2>
+            <p id="megrendeloneve">Név: ?</p>
+            <p id="cim">Cím: ?</p>
+            <p id="telefonsz">Telefon: ?</p>
+        </div>
+    </div>
+
+</body>
+</html>
